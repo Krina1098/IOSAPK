@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>About Us</title>
+<link rel="stylesheet" href="CSS\style.css">
+<link rel="stylesheet" href="CSS\slideNav.css">
+<link rel="stylesheet" href="CSS\UserType.css">
+<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+	*{
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		font-family: 'Poppins', sans-serif;
+	}
+
+   .applicationBox
+	{
+         width:90vw;
+		height:95vh;
+		margin-bottom: 5%;
+		margin-right:5%;
+		background-color:lightgray;
+		justify-content: center;
+		border-radius: 5px;
+		overflow: auto;
+		
+	}
+	.box
+	{
+	
+	     width:75vw;
+		height:75vh;
+		margin-bottom: 5%;
+	    margin-left:7%;
+		background-color:lightgrey;
+		justify-content: center;
+		border-radius: 5px;
+		/*overflow: auto;  */
+	
+	}
+	
+	.card{
+      display:flex;
+      width:100%;
+      height:200px;
+      justify-content:center;
+      margin-top:5%;
+         
+    }
+	table
+      { 
+		  width:60vw;  
+		  height: 95vh;
+		  border-collapse: separate;
+		  border-spacing: 0 10px;
+		  margin-left:20%;
+		}
+
+		table tr td
+		{
+		  padding:10px !important;
+		 
+		}
+		
+		.textarea{
+		width:55vw;
+		height:15vh;
+		border-radius:5px;
+
+	}
+	 .input{
+		width:55vw;
+		height:6vh;
+		border-radius:5px;
+		background-color:white;
+	}	
+
+	.btn1
+	{
+		width:10vw;
+		height:5vh;
+		margin-top:5%;
+		font-size:15px;
+		font-weight: 10px;
+		font-family:'Poppins', sans-serif;
+		border-radius: 5px;
+		background: white;
+		
+	 }
+  
+     .btn
+     {
+       width:20px;
+       height:20px;
+       border-radius: 5px;
+       background: white;
+     }
+
+</style>
+ 
+</head>
+<body>
+<div class="slidebar">
+      <div class="logo_content">
+        <div class="logo">
+          <img src="Images\Logo.jpg" class="logo_design">
+
+        </div>
+        <i class='bx bx-menu bx-flip-horizontal' id="btn" ></i>
+      </div>
+      <ul class="nav_list">
+        <li>
+          <a href="Home.html">
+            <i class='bx bxs-home bx-flip-horizontal' ></i>
+            <span class="links_name"> Home </span>
+         </a>
+         <span class="tool_tip"> Home </span>
+       </li>
+        <li>
+           <a href="AboutUS.html">
+          <i class='bx bxs-info-square bx-flip-horizontal' ></i>
+          <span class="links_name"> About Us <span class="links_name"> </span>
+         </a>
+         <span class="tool_tip"> About Us </span>
+       </li>
+        <li>
+           <a href="Contact.jsp">
+              <i class='bx bxs-contact'></i>
+              <span class="links_name">Contact Us </span>
+            </a>
+            <span class="tool_tip"> Contact Us</span>
+        </li>
+        <li>
+          <a href="UserType.html">
+             <i class='bx bxs-user-account' ></i>
+              <span class="links_name">Sign in<span>
+         </a>
+         <span class="tool_tip"> Sign in </span>
+       </li>
+      </ul>
+    </div>
+    <section class="home_content">
+	 <div class="text">
+	  <div class="container">
+	    <div class="applicationBox">
+	      <h2 style="color:#11101d;text-align:center;padding-top:5%;font-size:45px;margin-bottom:20px;">About Us </h2>
+	       <div class="box">
+	       <p> <b style="font-size:20px;"> iOSapk is a platform that not only helps provide applications for smartphones on the cloud
+but also helps in installing computer-based software's. Sellers offers various applications for 
+users. Smartphone users can be on android or iOS Operating systems, or they could be 
+windows or mac user.</b> </p>
+	        <br>
+	        <br> 
+	        <p> <b style="font-size:20px;"> iOSapk is a user-friendly platform where our primary goal is to break the echo system which 
+different operating systems have created.</b></p> <br> <br>
+	        <p> <b style="font-size:20px;"> On our platform, We make sure that both android and apple users get access to applications 
+on the same platform. Our users don't need to access different websites for accessing 
+desired applications like they do in the traditional environment.</b></p> <br> <br>
+	        <p> <b style="font-size:20px;">iOSapk is trying to bring everyone closer and make everyone lives more uncomplicated. 
+They don't have to go to different stores to access applications; they can find everything 
+under one platform, saving everyone's time. As the great Benjamin Franklin once said, "Time 
+Is Money". </b></p> <br> <br>
+	        
+	       </div>
+	    </div>
+	 </div>
+	</div>
+	</section>
+    <script src="JS\Navigationbar.js"> </script>
+
+</body>
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title> User SignUp</title>
+ <script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"> </script>
+<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+
+ <meta name="viewport" content="width=device-width,initial-scale=1.0">
+ <style>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+	*{
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		font-family: 'Poppins', sans-serif;
+	}
+	
+   .box
+   {
+	
+		width:90vw;
+		height:85vh;
+		/*width:45px;
+		height:600px;*/
+		margin-top:5%;
+		margin-left:5%;
+		/*margin-right:5%;*/
+		/*margin-bottom: 5%;*/
+		background-color:lightgray;
+		justify-content: center;
+		border-radius: 10px;
+		overflow: auto;
+		
+    }
+  table
+      { 
+		  width:40vw;  
+		  height:40vh;
+		  border-collapse: separate;
+		  border-spacing: 0 10px;
+		  margin-left:30%;
+		}
+
+		table tr td
+		{
+		  padding:10px !important;
+		 
+		}
+	.input{
+		width:25vw;
+		height:5vh;
+		border-radius:5px;
+	}
+	.btn1
+	{
+		width:15vw;
+		height:5vh;
+		margin-left:20%;
+		margin-bottom:10%;
+		margin-top:10%;
+		font-size:15px;
+		font-weight: 10px;
+		font-family:'Poppins', sans-serif;
+		border-radius: 5px;
+		background: white;
+		
+	}
+	.t1
+	{
+	   width:40vw;
+	   height:6vh;
+	   margin-left:30%;
+	   	  
+	}
+	
+ </style>
+</head>
+<body>
+	<!--<div ng-app="User" ng-controller="user-control"></div> --> 
+	<div class="box">
+	   <h2 style="color:#11101d; text-align:center;margin-bottom:5%;padding-top:5%;font-size:45px;"> User SignUp </h2>
+		<div style="overflow-x:auto;">
+		<form action="UserSignUp" method="POST" enctype="multipart/form-data">
+	    	<table>
+				<tr style="margin-bottom:25%;">
+					<td style="latter-spacing:1px;"> <b> Name:</b> </td>
+					<td><input class="input" type="text" name="Name" placeholder="Name" ng-model="Name" required></td>
+				</tr>
+				<tr style="margin-bottom:25%;">
+					<td style="latter-spacing:1px;"> <b>Profile Pic:</b> </td>
+					<td><input class="input" type="file" name="Profile" required></td>
+				</tr>
+				<tr style="margin-bottom:25%;">
+					<td style="latter-spacing:1px;"> <b> Date of Birth:</b> </td>
+					<td><input class="input" type="date" name="DOB" placeholder="DOB" ng-model="DOB" required></td>
+				</tr>
+				<tr style="margin-bottom:30%;">
+					<td style="latter-spacing:1px;"> <b> Contact:</b> </td>
+					<td><input class="input" type="text" name="Contact" placeholder="Contact" ng-model="Contact" required></td>
+				</tr>
+				<tr style="margin-bottom:25%;">
+					<td style="latter-spacing:1px;"> <b> Address:</b> </td>
+					<td><input class="input" type="text" name="Add1" placeholder="Address" ng-modle="Add1" required></td>
+				</tr>
+				<tr style="margin-bottom:25%;">
+					<td style="latter-spacing:1px;"> <b> Address:</b> </td>
+					<td><input class="input" type="text" name="Add2" placeholder="Address" ng-model="Add2"></td>
+				</tr>
+				<tr style="margin-bottom:25%;">
+					<td style="latter-spacing:1px;"> <b> Province/State:</b> </td>
+					<td><input class="input" type="text" name="PS" placeholder="Province/State" ng-model="Province" required></td>
+				</tr>
+				<tr style="margin-bottom:25%;">
+					<td style="latter-spacing:1px;"> <b> Country:</b> </td>
+					<td><input class="input" type="text" name="Country" placeholder="Country" ng-model="Country" required></td>
+				</tr>
+				<tr style="margin-bottom:25%;">
+					<td style="latter-spacing:1px;"> <b> Postal code:</b> </td>
+					<td><input class="input" type="text" name="Postal" placeholder="Postal" ng-model="Postal"></td>
+				</tr>
+				<tr style="margin-bottom:25%;">
+					<td style="latter-spacing:1px;"> <b>Hint:</b> </td>
+					<td><input class="input" type="text" name="Hint" placeholder="Birth Place" ng-model="Hint"required></td>
+				</tr>
+				<tr style="margin-bottom:25%;">
+					<td style="latter-spacing:1px;"> <b> Email:</b> </td>
+					<td><input class="input" type="email" name="Username" placeholder="Username" ng-model="email" required></td>
+				</tr>
+				<tr style="margin-bottom:25%;">
+					<td style="latter-spacing:1px;"> <b> Password:</b> </td>
+					<td><input class="input" type="password" name="Pass" placeholder="Password" required></td>
+				</tr>
+				<tr style="margin-bottom:25%;">
+					<td style="latter-spacing:1px;"> <b>Confirm Password:</b> </td>
+					<td><input class="input" type="password" name="Confirm" placeholder="Password confirmation" required></td>
+				</tr>
+				<tr>
+				<td>              </td>
+				<td> <Button class= "btn1" type="submit"> SignUp </Button></td>
+				</tr>
+				
+    		</table>
+		</form>
+		
+		</div>  
+	 </div> 
+	 
+		
+</body>
+</html>
