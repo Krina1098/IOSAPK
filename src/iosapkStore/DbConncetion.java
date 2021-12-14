@@ -22,7 +22,7 @@ public class DbConncetion {
 			  
 			//step2 create  the connection object  
 		     	try {
-					con=DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe","SYSTEM","jat@19568");
+					con=DriverManager.getConnection("jdbc:oracle:thin:@oracledb.cytfn4lqtcuq.ca-central-1.rds.amazonaws.com:1521:DATABASE","admin","Krina$1098");
 					
 					
 					
